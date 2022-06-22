@@ -1,0 +1,382 @@
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+$main-font: 'PT Sans', sans-serif;
+$second-font: 'Playfair Display', serif;
+
+html {
+    font-family:'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+
+}
+
+.container {
+    margin: 0 405px;
+}
+.container_flex {
+    display: flex;
+}
+
+.f-justify{
+    justify-content: space-between;
+}
+
+.f-row{
+    flex-direction: row;
+
+}
+
+.f-column{
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header__info {
+    background-color: #000000;
+    padding: 1rem;
+}
+
+.info__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__info {
+    font-size: .9rem;
+    color: #969696;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.login__link{
+    font-size: .9rem;
+    color: #969696;
+}
+
+.header__nav {
+    background-color: #0F0F0F;
+
+}
+
+.nav__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: auto 0;
+    font-family: $second-font;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    li {
+        padding: 31px 20px;
+    }
+
+    li:hover {
+        background-color: #1F1F1F;
+    }
+}
+
+.nav__link_header {
+    text-transform: uppercase;
+    color: #969696;
+}
+
+.main__info {
+    background-image: url("images/Rectangle 3.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__title {
+    border: 4px solid #fff;
+    padding: 6.5rem 5rem;
+    margin: 11.5rem 56.5rem 6.5rem;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+
+}
+
+.info__title_brand {
+    font-family: $second-font;
+    font-size: 3.7rem;
+    font-weight: 700;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.info__title_place{
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+.info__text {
+    font-family: $main-font;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    margin: 0 42.5rem 11rem;
+    text-transform: uppercase;
+}
+
+.collection {
+    display: flex;
+    flex-direction: row;
+}
+
+.collection__goods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 1040px;
+}
+
+.collection__title {
+    font-family: $second-font;
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -4rem;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 50%;
+        background-color: #fff;
+    }
+}
+
+.goods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 7.2rem;
+    flex-wrap: wrap;
+}
+
+.good {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.good_mr {
+    margin-left: 50px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+
+
+.good__img {
+    padding: 4rem 1.6rem;
+    background-color: #191B1C;
+}
+
+.good__title {
+    font-family: $second-font;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 1.7rem 0.8rem 0 0;
+}
+
+.good__price {
+    font-family: $second-font;
+    font-size: 1.1rem;
+    color: #D0D0D0;
+}
+
+.collection__aside{
+    background-image: url("images/Rectangle\ 8.png");
+    background-repeat: no-repeat;
+    width: 880px;
+    padding: 34.5rem 18rem 6rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside__title {
+    margin-bottom: 4.2rem;
+    &::after {
+        width: 30%;
+        bottom: -2.1rem;
+    }
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+}
+
+.collection__aside_2 {
+    background-image: url('images/Rectangle 9.png');
+}
+
+.collection__info {
+    font-family: $main-font;
+    font-size: 1rem;
+    color: #fff;
+    max-width: 33.5rem;
+    text-align: center;
+    margin: 6rem 0 5rem;
+}
+
+.new {
+    background-color: #000;
+    padding: 8.5rem 0;
+}
+
+
+.collection__title_new {
+    margin-bottom: 8.5rem;
+}
+
+.brands {
+    background-color: #0F0F0F;
+    padding: 4rem 0 5rem;
+}
+
+.brands__list {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer {
+    background-image: url("images/Rectangle\ 15.png");
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.about__title {
+    font-family: $second-font;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.about__text {
+    font-size: 1rem;
+    font-family: $main-font;
+    max-width: 25rem;
+    color: #fff;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 25rem;
+}
+
+.btn__category {
+    border: none;
+    padding: .8rem 1.6rem;
+    background-color: #000;
+    text-transform: lowercase;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.subscribe {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.subscribe__mail {
+    padding: .8rem 1.6rem;
+    background-color: rgba(255, 255, 255,  .4);
+    &::placeholder {
+        color: #fff;
+    }
+    color: #fff;
+
+    outline: none;
+    border: none;
+}
+
+.subscribe__btn {
+    border: none;
+    padding: .8rem 1.6rem;
+    background-color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    &:hover {
+        cursor: pointer;
+    }
+}
